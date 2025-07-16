@@ -1,9 +1,26 @@
 let n = Number(prompt('Enter a number'))
 
-let rev = 0;
-while(n>0){
-    rem = n % 10;
-    rev = (rev*10) + rem;
-    n = Math.floor(n/10)
+switch (n) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+    case 3:
+        console.log('webnesday');
+        break;
+    case 4:
+        console.log('thusday');
+        break;
+    case 'shivam':
+        console.log('friday');
+        break;
+    case 6:
+        console.log('saturday');
+        break;
+    case 7:
+        console.log('sunday');
+        break;
+
+    default: console.log('nothing');
+        break;
 }
-console.log(rev);
